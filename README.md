@@ -71,17 +71,12 @@ begin
         4'b0111: seg = 7'b1111000;
         4'b1000: seg = 7'b0000000;
         4'b1001: seg = 7'b0010000;
-        4'b1010: seg = 7'b0001000;
-        4'b1011: seg = 7'b0000011;
-        4'b1100: seg = 7'b1000110;
-        4'b1101: seg = 7'b0100001;
-        4'b1110: seg = 7'b0000110;
-        4'b1111: seg = 7'b0001110;
         default: seg = 7'b1111111;
     endcase
 end
 
 endmodule
+
 ```
 ## Constraint file for Seven-Segment Display
 ```
@@ -109,11 +104,10 @@ set_property -dict { PACKAGE_PIN A8 IOSTANDARD LVCMOS33 } [get_ports {an[3]}]
 ```
 ## FPGA Implementation Output
 
-![WhatsApp Image 2025-10-28 at 16 11 41_2b678dfd](https://github.com/user-attachments/assets/125b3f8c-1b00-4905-a9cc-5649b4ae04b6)
+![WhatsApp Image 2025-11-13 at 12 35 44 PM](https://github.com/user-attachments/assets/4e7476a5-ccfd-424b-b307-a843e1467661)
 
 
 
----
 
 ## Conclusion
 In this experiment, a seven-segment display driver was successfully implemented using Verilog HDL in FPGA.This experiment demonstrates the practical application of Verilog HDL in designing and controlling digital hardware components, highlighting its importance in developing reliable and efficient digital systems.
